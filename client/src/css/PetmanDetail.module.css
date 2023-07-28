@@ -1,0 +1,245 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+    background-color: transparent;
+}
+.header__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 140px;
+    padding: 0 4px;
+}
+.header__start{
+    display: flex;
+    align-items: center;
+}
+.header__icon{
+    width: 60px;
+    height: 60px;
+    border: none;
+    background-color: transparent;
+    margin: 0px 4px;
+}
+.header__icon__notice{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: none;
+    background-color: transparent;
+    margin-right: 5px;
+}
+.header__start{
+    width: 100%;
+}
+.header__end{
+    display: flex;
+    width: 100%;
+    justify-content: right;
+}
+.header__notice__group{
+    position: relative;
+    width: 100%;
+    margin-right: 5px;
+}
+.header__left{
+    left : 0;
+    height: 40px;
+}
+.header__right{
+    right: 0;
+    height: 40px;
+}
+.main__image__info{
+    width: 100%;
+    height: 100%;
+}
+.main__image__wrap{
+    position: relative;
+    padding-top: 70%;  
+    overflow: hidden;
+}
+.main__image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+}
+
+.main__contents{
+    width: 100%;
+    margin-bottom: 200px;
+    background-color: transparent;
+    padding: 10px;    
+}
+.main__content__wrap{
+    width: 100%;
+    padding-bottom: 30px;
+}
+.main__content{
+    padding: 30px 30px 20px 30px;
+    word-break: break-all;
+}
+.main__content span{
+    font-size: 2rem;
+    color: white;
+}
+.main__content__date{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    color: gray;
+}
+.main__content__date span{
+    font-size: 1.2rem;
+}
+.main__content__good{
+    display: flex;
+    align-items: center;
+}
+.main__content__good img{
+    width: 60px;
+    height: 60px;
+}
+.main__content__good span{
+    font-size: 2rem;
+    color: white;
+}
+.main__content__reaction{
+    width: 100%;
+    z-index: 20;
+    color: white;
+    box-shadow: 0 0 3px gray;
+}
+.icon__group{
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    align-items: center;
+}
+.icon__image{
+    width: 60px;
+    height: 60px;
+    margin: 0px 30px 0px 30px;
+}
+
+.footer{
+    position: fixed; 
+    width: 100%;
+    height: 200px;
+    left: 0px;
+    bottom: 0px;
+    background-color: rgb(28, 28, 28);
+    box-shadow: 0 0 3px gray;
+    z-index: 200;
+}
+.footer form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    outline: none;
+    vertical-align: middle;
+    padding: 40px 20px 40px 20px;
+}
+.footer input[type=text]{
+	position: flex;
+    width: calc(100% - 170px);
+    height: 120px;
+    border: 1px solid;
+	border-radius: 5px;
+	background-color: rgb(70, 70, 70);
+	display: inline-block;
+    font-size: 3rem;
+    border: 2px solid wheat;
+
+}
+.footer input[type=text]::placeholder{
+	color: rgb(118, 118, 118);
+	font-size: 3rem;
+    text-align: center;
+}
+.footer input[type=image]{  
+    width: 120px;
+    height: 120px;
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    .header__wrapper{
+        height: 60px;
+        padding: 0 5px;
+    }
+    .header__notice__group{
+        margin-right: 5px;
+    }
+    .main__content{
+        padding: 10px;
+        word-break: break-all;
+    }
+    .main__content span{
+        font-size: 1.5rem;
+    }
+    .main__content__date{
+        padding: 10px;
+    }
+    .main__image{
+        max-width: 100%;
+    }
+    .icon__image{
+        width: 30px;
+        height: 30px;
+        margin: 0px 10px 0px 10px;
+    }
+    .footer__reply{
+        width: calc(100% - 120px);
+    }    
+    .main__content__good span{
+        font-size: 1rem;
+    }
+    .header__icon{
+        width: 30px;
+        height: 30px;    
+    }
+    .footer{        
+        height: 60px;
+    }
+    .footer form{      
+        padding: 10px 5px 10px 5px;
+    }
+    .footer input[type=text]{
+        width: calc(100% - 70px);
+        height: 40px;
+        font-size: 1rem;
+    }
+    .footer input[type=text]::placeholder{
+        color: rgb(118, 118, 118);
+        font-size: 1rem;
+        text-align: center;
+    }
+    .footer input[type=image]{  
+        width: 40px;
+        height: 40px;
+        margin-left: 10px;
+    }
+    .main__content__good img{
+        width: 30px;
+        height: 30px;
+    }
+    .main__content__wrap{
+        padding-bottom: 5px;
+    }
+    .main__content__date span{      
+        font-size: 0.8rem;
+    }
+}    

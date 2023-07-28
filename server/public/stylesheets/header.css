@@ -1,0 +1,49 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 0 3px gray;
+    z-index: 20;
+    color: white;
+    background-color: rgb(20, 20, 20);
+}
+.header__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 120px;
+    padding: 0 16px;
+}
+.header__start{
+    height: 40px;
+    line-height: 40px;
+}
+.header__humburger{
+    border: none;
+    background-color: transparent;
+    font-size: 5rem;
+    color: white;
+}
+.header__title{
+    font-size: 2em;
+    margin-left: 6px;
+}
+.header__area{
+    font-size: 3rem;
+    margin-left: 16px;
+    vertical-align: top;
+}
+.header__search{
+    width: 60px;
+    height: 60px;
+    border: none;
+    background-color: transparent;
+}
+.header__alarm{
+    width: 60px;
+    height: 60px;
+    border: none;
+    background-color: transparent;
+    margin-left: 6px;
+}
